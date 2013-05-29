@@ -1,6 +1,7 @@
 CC = gcc -std=c99
 CC2 = g++
 ARGS = -O3 -Wall -funroll-loops -ffast-math -lm
+#TARGET_DIR = win32_bin
 TARGET_DIR = linux_bin
 
 all: e26 e27 e28 e30 e31 e32 e33 e34 e35 e36 e37 e38 e39 e41 e42 e43 e44 e46 e47 e49 e50
