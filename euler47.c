@@ -29,8 +29,10 @@ int main(int argc, char** argv) {
         if (count_prime_factors(i, primes, p_len) == 4 &&
                 count_prime_factors(i+1, primes, p_len) == 4 &&
                 count_prime_factors(i+2, primes, p_len) == 4 &&
-                count_prime_factors(i+3, primes, p_len) == 4)
+                count_prime_factors(i+3, primes, p_len) == 4) {
             printf("%d  %d  %d %d\n", i, i+1, i+2, i+3);
+            break;
+        }
     }
     return 0;
 }

@@ -39,6 +39,7 @@ int cancelled_but_equal(int numer, int denom) {
 }
 
 int main(int argc, char **argv) {
+    printf("%d/%d is cancellable\n", 49,98);
     for (int numer = 10; numer < 98; ++numer)
         for (int denom = numer+1; denom < 99; ++denom)
             if (cancelled_but_equal(numer, denom))

@@ -24,6 +24,8 @@ int unit_fraction(int divisor, int show) {
         // add this remainder to the list
         remainders[rem_count++] = dividend;
     }
+    if (show)
+        printf("\n");
     // distance from this point to last time we saw this remainder
     return rem_count - linear_search(dividend, remainders, rem_count) - 1;
 }
