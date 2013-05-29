@@ -18,7 +18,7 @@ void pandigital_products(int num) {
     }
     if (len_total == 9)
         if (is_pandigital(all_numbers, 9))
-            printf("Product of %d: %d\n", num, join_number(all_numbers,9));
+            printf("Product of %d: %ld\n", num, join_number(all_numbers,9));
 }
 
 int main(int argc, char** argv) {
