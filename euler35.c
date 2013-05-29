@@ -2,6 +2,7 @@
 
 int rotate_number(int num);
 int* find_rotations(int num, int* len);
+int check_for_evens(int* nums, int len);
 int is_circular_prime(int num, int* primes, int prime_count);
 int main(int argc, char **argv);
 
@@ -35,10 +36,22 @@ int* find_rotations(int num, int* len) {
     return rotations;
 }
 
+int check_for_evens(int* numbers, int len) {
+    /* Return the index of first even digit if found in numbers, else -1
+     * Begins search from the start of the array
+     */
+    int i;
+    for (i = 0; i < len; ++i)
+        if (0 == numbers[i] || 2 == numbers[i] || 4 == numbers[i] ||
+                6 == numbers[i] || 8 == numbers[i])
+            return i;
+    return -1;
+}
+
 int is_circular_prime(int num, int* primes, int prime_count) {
     int len;
     int* num_s = split_number(num, &len);
-    if (linear_search(0, num_s, len) != -1) {
+    if (len > 1 && check_for_evens(num_s, len) != -1) {
         free(num_s);
         return 0;
     }

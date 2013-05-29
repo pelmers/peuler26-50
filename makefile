@@ -58,3 +58,9 @@ e46:
 
 e47:
 	$(CC) euler47.c -o linux_bin/eu47 $(ARGS)
+
+e49:
+	$(CC) euler49.c -o linux_bin/eu49 $(ARGS)
+
+e50:
+	$(CC) euler50.c -o linux_bin/eu50 $(ARGS)

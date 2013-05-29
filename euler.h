@@ -4,6 +4,7 @@
 #include <string.h>
 #include <limits.h>
 
+void swap_i(int* x, int* y);
 int linear_search(int target, int* numbers, int len);
 int rlinear_search(int target, int* numbers, int len);
 int binary_search(int num, int* nums, int len);
@@ -26,6 +27,12 @@ inline long pentagonal_number(int term);
 inline int is_pentagonal(long num);
 inline long hexagonal_number(int term);
 inline int is_hexagonal(long term);
+
+void swap_i(int* x, int* y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
 
 int linear_search(int target, int* numbers, int len) {
     /* Return the index of target if found in numbers, else -1
