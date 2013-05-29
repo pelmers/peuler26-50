@@ -2,6 +2,8 @@ CC = gcc -std=c99
 CC2 = g++
 ARGS = -O3 -Wall -funroll-loops -ffast-math -lm
 
+all: e26 e27 e28 e30 e31 e32 e33 e34 e35 e36 e37 e38 e39 e41 e42 e43 e44 e46 e47 e49 e50
+
 e26:
 	$(CC) euler26.c -o linux_bin/eu26 $(ARGS)
 
