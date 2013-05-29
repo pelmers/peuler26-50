@@ -5,8 +5,8 @@ int main(int argc, char** argv);
 int main(int argc, char** argv) {
     int plen;
     int current;
-    int max_num = 0;
-    int max_count = 0;
+    int max_num = 953;
+    int max_count = 21;
     int* primes = find_primes(1000000, &plen);
     printf("%d primes found\n", plen);
     for (int i = 0; i < plen && (plen - i) > max_count; ++i) {
