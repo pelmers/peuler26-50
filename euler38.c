@@ -7,7 +7,7 @@ void pandigital_products(int num) {
     int len, len_total;
     int i = 2;
     int *numbers = split_number(num, &len);
-    int *all_numbers = malloc(sizeof(int) * len);
+    int *all_numbers = malloc(sizeof(int) * 16);
     memcpy(all_numbers, numbers, sizeof(int)*len);
     len_total = len;
     while (len_total < 9) {
